@@ -98,7 +98,16 @@ class BinarySearchTree{
      }
      return result;
   }
-  
+
+  postOrder(node = this.root,result = []){
+     if(node){
+      this.postOrder(node.left,result);
+      this.postOrder(node.right,result);
+      result.push(node.value);
+     }
+    
+     return result;
+    }
 }
 
 // --------------------------------------------Testing the Binary Search Tree------------------------------------------
@@ -113,3 +122,5 @@ console.log("Search 10:", bst.search(10)); // true
 console.log("Search 1:", bst.search(1)); // false
 console.log("Level Order Traversal:", bst.levelOrder()); // [10, 5, 15, 3, 7]
 console.log("Pre Order Traversal:", bst.preOrder()); // [10, 5, 3, 7, 15]
+console.log("In Order Traversal:", bst.inOrder()); // [3, 5, 7, 10, 15]
+console.log("Post Order Traversal:", bst.postOrder()); // [3, 7, 5, 15, 10]
