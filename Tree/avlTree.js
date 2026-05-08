@@ -63,7 +63,7 @@ class AVLTree {
         } else if (data > node.data) {
             node.right = this.insert(node.right, data);
         } else {
-            return node; // Duplicate data not allowed.
+            return node; // Duplicate data not allowed but sigel.
         }
 
         // Update node's height.
