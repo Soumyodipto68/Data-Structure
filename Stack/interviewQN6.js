@@ -37,6 +37,9 @@ function nextLargerElement(arr) {
 }
 
 // Driver Code
-let arr = [ 6, 8, 0, 1, 3 ];
-let res = nextLargerElement(arr);
-console.log(res.join(" "));
+let arr1 = [ 6, 8, 0, 1, 3 ];
+let res1 = nextLargerElement(arr1);
+console.log(res1.join(" "));
+let arr2 = [ 1, 5, 8, 5, 3 ];
+let res2 = nextLargerElement(arr2);
+console.log(res2.join(" "));
