@@ -40,6 +40,44 @@ function nextLargerElement(arr) {
 let arr1 = [ 6, 8, 0, 1, 3 ];
 let res1 = nextLargerElement(arr1);
 console.log(res1.join(" "));
+
 let arr2 = [ 1, 5, 8, 5, 3 ];
 let res2 = nextLargerElement(arr2);
 console.log(res2.join(" "));
+
+function nextLargerElement1(arr) {
+
+    let n = arr.length;
+    let res = new Array(n).fill(-1);
+    let stk = [];
+
+    // Traverse the array from right to left
+    for (let i = n - 1; i >= 0; i--) {
+
+        // Pop elements from the stack that are less
+        // than or equal to the current element
+        while (stk.length > 0
+               && stk[stk.length - 1] <= arr[i]) {
+
+            stk.pop();
+        }
+
+        // If the stack is not empty, the top element
+        // is the next greater element
+        if (stk.length > 0) {
+            res[i] = stk[stk.length - 1];
+        }
+
+        // Push the current element onto the stack
+        stk.push(arr[i]);
+    }
+
+    return res;
+}
+
+// Driver Code
+console.log("------------------------------------------------")
+console.log("Alternative Approach: Using Stack");
+let arr = [ 6, 8, 0, 1, 3 ];
+let res = nextLargerElement1(arr);
+console.log(res.join(" "));
