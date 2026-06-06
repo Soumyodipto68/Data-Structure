@@ -20,5 +20,6 @@ public class Pattern6 {
       }
       System.out.println();
     }
+    sc.close();
   }
 }
