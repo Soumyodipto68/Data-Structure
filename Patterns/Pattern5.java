@@ -2,7 +2,7 @@ package Patterns;
 import java.util.Scanner;
 public class Pattern5 {
   public static void main(String[] args) {
-   int n = 5;
+   int n = 0;
    Scanner sc = new Scanner(System.in);
    System.out.println("Enter the number of rows");
    n = sc.nextInt();
