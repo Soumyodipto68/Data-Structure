@@ -1,0 +1,24 @@
+package Patterns;
+
+import java.util.Scanner;
+
+public class Pattern8 {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter The number of Rows: ");
+    int n = sc.nextInt();
+    int num = 1;
+    if(n <= 0){
+      System.out.println("You are a Fucking Idiot!!! ");
+    }
+    System.out.println("The Pattern is....");
+    for(int i=0;i<=n;i++){
+       for(int j=0;j<=i;j++){
+        System.out.print(num+" ");
+        num++;
+       }
+    System.out.println();
+    }
+    sc.close();
+  }
+}
