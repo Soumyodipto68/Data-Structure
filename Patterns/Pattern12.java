@@ -10,7 +10,7 @@ public class Pattern12 {
    if(n<=0){
     System.out.print("You are a Fucking Idiot!!!");
    }
-   System.out.println("The Pattern is");
+
         // outer loop to handle upper part
         for (int i = 1; i <= n; i++) {
             

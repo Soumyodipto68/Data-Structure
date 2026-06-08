@@ -11,7 +11,6 @@ public class Pattern8 {
     if(n <= 0){
       System.out.println("You are a Fucking Idiot!!! ");
     }
-    System.out.println("The Pattern is....");
     for(int i=0;i<=n;i++){
        for(int j=0;j<=i;j++){
         System.out.print(num+" ");
