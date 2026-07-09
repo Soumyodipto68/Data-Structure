@@ -10,7 +10,6 @@ public class Pattern13 {
     if(n<=0){
       System.out.print("You are a Fucking Idiot!!!");
     }
-    System.out.println("The Pattern is!!!!");
     for(int i=0;i<n;i++){
       for(int j=n-i;j>1;j--){
         System.out.print(" ");
