@@ -30,7 +30,7 @@ def ReplaceCharacter(str1,ch1,ch2):
     return result
   return "Null"
 
-str1=input("str:")  
+str1=input("string:")  
 ch1=input("ch1:")  
 ch2=input("ch2:")  
 print(ReplaceCharacter(str1,ch1,ch2))
