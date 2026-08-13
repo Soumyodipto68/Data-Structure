@@ -22,8 +22,8 @@ print("You need a sum of Rs",cost."to cover the trip")
 """
 
 
-fuel = float(input())
-distance = float(input())
+fuel = float(input("fuel:"))
+distance = float(input("distance:"))
 
 if fuel <= 0 or distance <= 0:
     print("Invalid Input")
